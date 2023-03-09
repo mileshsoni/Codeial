@@ -7,5 +7,5 @@ const router = express.Router();
 
 //using the home function of the controller module
 router.get("/", homeController.home);
-
+router.use("/users", require("./users"));
 module.exports = router;
