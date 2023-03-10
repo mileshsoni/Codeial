@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
+const expressLayout = require("express-ejs-layouts");
 // by default websites run on port 80
 const port = 8000;
 
+app.use(expressLayout);
 // getting the express router function to be called using the middleware
 app.use("/", require("./routes"));
 
