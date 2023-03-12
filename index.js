@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
+// library required to use layouts
 const expressLayout = require("express-ejs-layouts");
+// accessing db
+const db = require("./config/mongoose");
 // by default websites run on port 80
 const port = 8000;
-// using layouts
+// To use layouts
 app.use(expressLayout);
 
 // to extract styles and scripts from individual pages
