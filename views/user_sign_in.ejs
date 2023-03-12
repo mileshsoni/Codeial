@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/user_sign_in.css">
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src = "/js/user_sign_in.js"></script>
+<div id = "outer-container">
+    <div id = "form-holder">
+        <form action="/sign-in" id = "form">
+            <span>Sign in</span>
+            <input type="email" placeholder="Email" class = "input">
+            <input type="password" placeholder="Password" id = "password" class = "input">
+            <i class="fa-regular fa-eye-slash"></i>
+            <div id = "pass-visibility">
+                <input type = "checkbox" id = "show-pass">
+                <label for = "show-pass">Show password</label>
+            </div>
+            <button type = "submit">Sign in</button>
+        </form>
+    </div>
+</div>

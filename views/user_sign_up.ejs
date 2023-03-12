@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/user_sign_up.css">
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src = "/js/user_sign_up.js"></script>
+<div id = "outer-container">
+    <div id = "form-holder">
+        <form action="/sign-up" id = "form">
+            <span>Sign Up</span>
+            <input type = "text" placeholder="name" class = "input" name = "name">
+            <input type="email" placeholder="Email" class = "input" name = "email">
+            <input type="password" placeholder="Password" id = "password" class = "input" name = "password">
+            <input type="password" placeholder="confirm password" id = "confirm-pass" class="input" name = "confirm_pass">
+            <div id = "pass-visibility">
+                <input type = "checkbox" id = "show-pass">
+                <label for = "show-pass">Show password</label>
+            </div>
+            <button type = "submit">Sign Up</button>
+        </form>
+    </div>
+</div>

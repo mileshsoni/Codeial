@@ -1,0 +1,50 @@
+#outer-container {
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#form span {
+    display: block;
+    padding: 3%;
+}
+.input {
+    margin-bottom:5% ;
+    border: 0;
+    border-bottom: 1px solid black;
+    height: 25px;
+}
+#show-pass {
+    height: 15px;
+    margin-right: 10px;
+}
+#pass-visibility {
+    display: flex;
+}
+#form button {
+    background-color: grey;
+    color: white;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+#form-holder {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+#outer-container input {
+    display: inline-block;
+}
