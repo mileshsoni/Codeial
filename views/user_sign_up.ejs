@@ -1,19 +1,31 @@
+<!-- adding link to styles -->
 <link rel="stylesheet" href="/css/user_sign_up.css">
+<!-- adding script for using jquery -->
 <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<!-- adding script to use jquery validate -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- script to use javascript file -->
 <script src = "/js/user_sign_up.js"></script>
+<!-- the outer container holds the entire form -->
 <div id = "outer-container">
+    <!-- this is to place the form in the middle of the screen -->
     <div id = "form-holder">
-        <form action="/sign-up" id = "form">
+        <!-- form for user sign up -->
+        <!-- POST method is used to send some data to the server -->
+        <!-- since we are creating the user, we want to send data to the server, therefore we are using POST -->
+        <form action="/users/create" method = "POST" id = "form">
+            <!-- form includes name, email, password and confirm password fields -->
             <span>Sign Up</span>
             <input type = "text" placeholder="name" class = "input" name = "name">
             <input type="email" placeholder="Email" class = "input" name = "email">
             <input type="password" placeholder="Password" id = "password" class = "input" name = "password">
             <input type="password" placeholder="confirm password" id = "confirm-pass" class="input" name = "confirm_pass">
+            <!-- div to add a checkbox to show and hide password -->
             <div id = "pass-visibility">
                 <input type = "checkbox" id = "show-pass">
                 <label for = "show-pass">Show password</label>
             </div>
+            <!-- a submit button -->
             <button type = "submit">Sign Up</button>
         </form>
     </div>

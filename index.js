@@ -1,5 +1,8 @@
 const express = require("express");
+const cookieParser = require('cookie-parser');
 const app = express();
+// server will run on this port
+const port = 8000;
 
 // library required to use layouts
 const expressLayout = require("express-ejs-layouts");
@@ -7,8 +10,11 @@ const expressLayout = require("express-ejs-layouts");
 // accessing db
 const db = require("./config/mongoose");
 
-// server will run on this port
-const port = 8000;
+// reading through post request 
+app.use(express.urlencoded());
+
+// using cookie parser
+app.use(cookieParser());
 
 // To use layouts
 app.use(expressLayout);

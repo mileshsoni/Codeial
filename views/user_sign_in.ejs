@@ -1,17 +1,28 @@
+<!-- link to add css -->
 <link rel="stylesheet" href="/css/user_sign_in.css">
+<!-- script to include and use jquery -->
 <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<!-- script to use javascript -->
 <script src = "/js/user_sign_in.js"></script>
+<div id = "heading">
+    <h1>Sign in</h1>
+</div>
+<!-- outer container holding entire form -->
 <div id = "outer-container">
+    <!-- a form holder -->
     <div id = "form-holder">
+        <!-- form to sign in for existing user -->
         <form action="/sign-in" id = "form">
+            <!-- form includes email and password as fields -->
             <span>Sign in</span>
             <input type="email" placeholder="Email" class = "input">
             <input type="password" placeholder="Password" id = "password" class = "input">
-            <i class="fa-regular fa-eye-slash"></i>
+            <!-- div to hold a checkbox to hide and show password -->
             <div id = "pass-visibility">
                 <input type = "checkbox" id = "show-pass">
                 <label for = "show-pass">Show password</label>
             </div>
+            <!-- submit button -->
             <button type = "submit">Sign in</button>
         </form>
     </div>
